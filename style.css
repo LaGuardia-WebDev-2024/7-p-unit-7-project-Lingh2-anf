@@ -5,16 +5,31 @@ body {
 }
 
 
+
 #myCanvas {
   background-image: url("https://images.pexels.com/photos/1387577/pexels-photo-1387577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   background-size: 400px;
   border-radius: 30px;
-  border: 1px solid rgb(255,245,227);
+  border: 5px solid rgb(255,245,227);
 }
 
 .main{
   display: flex;
-  text-align: left;
+  text-align: middle;
   justify-content: space-around;
 }
 
+div {
+  width: 600px;
+  height: 400px;
+  background-color: rgb(255, 145, 133);
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {background-color: rgb(255, 130, 147);}
+  25%  {background-color: rgb(245, 179, 216);}
+  50%  {background-color: rgb(255, 249, 166);}
+  100% {background-color: rgb(255, 173, 148);}
+}
